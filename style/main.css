@@ -1,0 +1,111 @@
+:root {
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --main-bg: hsl(217, 54%, 11%);
+    --card-bg: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%)
+}
+
+html {
+    font-family: Outfit, serif;
+    color: var(--soft-blue);
+    background-color: var(--main-bg);
+    display: inline-block;
+    font-size: 18px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: var(--card-bg);
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    max-width: 370px;
+    padding: 24px;
+    margin: 2rem auto 2rem auto;
+}
+
+h1 {
+    color: var(--white);
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.info-container {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.eth, .days {
+    display: flex;
+}
+
+.eth img, .days img {
+    margin-right: 0.5rem;
+    display: block;
+}
+
+.eth {
+    color: var(--cyan);
+}
+
+.avatar {
+    display: flex;
+    padding: 1rem;
+    border-top: 1px solid var(--line);
+}
+
+.avatar span {
+    color: var(--white);
+}
+
+.avatar span:hover, h1:hover {
+    color: var(--cyan);
+    cursor: pointer;
+}
+
+.image-wrapper {
+    background-color: var(--cyan);
+    display: flex;
+    border-radius: 3%;
+    position: relative;
+}
+
+#view {
+    position: absolute;
+    top: 44%;
+    left: 44%;
+    visibility: hidden;
+}
+
+#equilibrium {
+    width: 100%;
+    border-radius: 3%;
+}
+
+#equilibrium:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.image-wrapper:hover #view {
+    visibility: visible;
+}
+
+#avatar {
+    border: 1px solid var(--white);
+    border-radius: 50%;
+    width: 15%;
+    height: 15%;
+    margin-right: 1em;
+}
+
