@@ -12,7 +12,7 @@ html {
     color: var(--soft-blue);
     background-color: var(--main-bg);
     display: inline-block;
-    font-size: 18px;
+    font-size: 1rem;
 }
 
 body {
@@ -29,7 +29,7 @@ body {
     flex-direction: column;
     max-width: 370px;
     padding: 24px;
-    margin: 2rem auto 2rem auto;
+    margin: 2em auto 2em auto;
 }
 
 h1 {
@@ -42,15 +42,16 @@ h1 {
     display: flex;
     justify-content: space-between;
     font-weight: 400;
-    margin-bottom: 1rem;
+    margin-bottom: 1em;
 }
 
 .eth, .days {
     display: flex;
+    align-items: center;
 }
 
 .eth img, .days img {
-    margin-right: 0.5rem;
+    margin-right: 0.5em;
     display: block;
 }
 
@@ -60,7 +61,7 @@ h1 {
 
 .avatar {
     display: flex;
-    padding: 1rem;
+    padding: 1em;
     border-top: 1px solid var(--line);
 }
 
